@@ -1,17 +1,34 @@
 #mysql
 
-version: '3.1'
-
 services:
-
   db:
-    image: mysql
+    image: mysql:8.0
+    container_name: mysql_container
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: example
-      MYSQL_DATABASE: my_database
-      MYSQL_USER: user_name
-      MYSQL_PASSWORD: user_password
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: mydatabase
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+    ports:
+      - "3306:3306"
+    volumes:
+      - db_data:/var/lib/mysql  # Aquí cambiamos mysql_data a db_data
+
+  cassandra:
+    image: cassandra:4.0
+    container_name: cassandra_container
+    restart: always
+    environment:
+      CASSANDRA_CLUSTER_NAME: "mydatabase"
+      CASSANDRA_PASSWORD: password
+      CASSANDRA_USER: user
+      CASSANDRA_SEEDS: "cassandra_container"
+    ports:
+      - "9042:9042"
+    volumes:
+      - cassandra_data:/var/lib/cassandra
 
 volumes:
   db_data:
+  cassandra_data:
