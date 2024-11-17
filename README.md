@@ -32,7 +32,7 @@ Este proyecto tiene como objetivo comparar el rendimiento de las operaciones de 
 
 ## Puedes instalar las bibliotecas necesarias usando:
 
-pip install mysql-connector-python cassandra-driver pandas matplotlib
+pip install mysql-connector-python cassandra-driver pandas matplotlib faker tqdm
 
 ## El proyecto está organizado de la siguiente manera:
 
