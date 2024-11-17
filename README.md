@@ -73,7 +73,9 @@ pip install mysql-connector-python cassandra-driver pandas matplotlib
     	*Sube el archivo script_consultas.py al entorno de Colab. (Puedes abrir el archivo .ipynb directamente) y ejecuta las celdas.
 
 Resultados
-Los resultados mostrarán la edad promedio y el tiempo de ejecución de las consultas para ambas bases de datos. Los gráficos generados en el notebook de Colab te permitirán comparar visualmente el rendimiento.
+Los resultados mostrarán la edad promedio y el tiempo de ejecución de las consultas para ambas bases de datos.
 
 Conclusiones
-Este proyecto proporciona una comparación básica entre MySQL y Cassandra en cuanto a rendimiento en operaciones de agregación. Los resultados pueden variar dependiendo de la configuración del entorno y del tamaño de los datos. En general, Cassandra puede ofrecer un mejor rendimiento para operaciones de escritura y consultas sobre grandes volúmenes de datos, mientras que MySQL es más eficiente para operaciones transaccionales y consultas complejas.
+Este proyecto proporciona una comparación básica entre MySQL y Cassandra en cuanto a rendimiento en operaciones de agregación. Los resultados pueden variar dependiendo de la configuración del entorno y del tamaño de los datos.
+
+En general, Cassandra puede ofrecer un mejor rendimiento para operaciones de escritura y consultas sobre grandes volúmenes de datos, mientras que MySQL es más eficiente para operaciones transaccionales y consultas complejas.

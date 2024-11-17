@@ -24,3 +24,4 @@ print(f"Tiempo de consulta (nombres con 'R'): {end_time - start_time:.4f} segund
 
 cursor.close()
 conn.close()
+
