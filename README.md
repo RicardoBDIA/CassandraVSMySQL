@@ -27,6 +27,8 @@ Este proyecto tiene como objetivo comparar el rendimiento de las operaciones de 
   - `cassandra-driver`
   - `pandas`
   - `matplotlib`
+  - `faker`
+  - `tqdm`
 
 ## Puedes instalar las bibliotecas necesarias usando:
 
