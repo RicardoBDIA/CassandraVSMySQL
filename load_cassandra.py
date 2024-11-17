@@ -19,7 +19,7 @@ session.execute("""
 """)
 
 # Insertar los datos desde el archivo CSV
-with open("data/data.csv", mode="r") as file:
+with open("data.csv", mode="r") as file:
     reader = csv.DictReader(file)
     for row in reader:
         session.execute("""
